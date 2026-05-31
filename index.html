@@ -1,122 +1,122 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>¿Qué es? | Mi Web</title>
+  <title>¿Qué es?</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- CSS propio -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">MI WEB</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MI WEB</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">¿Qué es?</a></li>
-          <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
-          <li class="nav-item"><a class="nav-link" href="herramientas.html">Herramientas</a></li>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item">
-            <button class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#contactModal">
-              Contacto
-            </button>
+            <a class="nav-link active" href="index.html">¿Qué es?</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html">Videos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="herramientas.html">Herramientas</a>
+          </li>
+
+          <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
+            <a class="btn btn-primary contact-link" href="#contacto">
+              Contacta
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <header class="hero">
-    <div class="container">
-      <p class="section-kicker text-white-50">Proyecto responsive</p>
+    <div class="container text-center">
       <h1>¿Qué es?</h1>
-      <p>
-        Página responsive realizada con HTML, CSS, JavaScript y Bootstrap.
-        Incluye navegación entre páginas y un formulario de contacto en pop-up.
-      </p>
-      <button class="btn btn-light btn-lg mt-4 fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
-        Contactar
-      </button>
+      <p>Una página responsive creada con HTML, CSS, JavaScript y Bootstrap.</p>
     </div>
   </header>
 
   <main>
-    <section id="que-es">
-      <div class="container">
-        <div class="row align-items-center g-5 mb-5">
-          <div class="col-lg-6">
-            <p class="section-kicker">Introducción</p>
-            <h2 class="section-title">¿Qué es?</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-              Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet.
-            </p>
-            <p>
-              Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
-              Mauris massa. Vestibulum lacinia arcu eget nulla.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img class="img-fluid rounded-media" src="https://picsum.photos/id/1035/900/600" alt="Imagen descriptiva uno">
-          </div>
+    <section class="container py-5">
+      <div class="row align-items-center g-4 mb-5">
+        <div class="col-lg-6">
+          <h2>¿Qué es?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+            Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+          </p>
+          <p>
+            Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+            Praesent mauris. Fusce nec tellus sed augue semper porta.
+          </p>
         </div>
 
-        <div class="row align-items-center g-5 flex-lg-row-reverse mb-5">
-          <div class="col-lg-6">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales
-              ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.
-            </p>
-            <p>
-              Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-              Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img class="img-fluid rounded-media" src="https://picsum.photos/id/1040/900/600" alt="Imagen descriptiva dos">
-          </div>
+        <div class="col-lg-6">
+          <img src="https://picsum.photos/id/1035/900/600" class="img-fluid rounded shadow" alt="Imagen 1">
+        </div>
+      </div>
+
+      <div class="row align-items-center g-4 mb-5 flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales
+            ligula in libero. Sed dignissim lacinia nunc.
+          </p>
+          <p>
+            Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+          </p>
         </div>
 
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus risus,
-              iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-            </p>
-            <p>
-              Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
-              Quisque volutpat condimentum velit.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img class="img-fluid rounded-media" src="https://picsum.photos/id/1050/900/600" alt="Imagen descriptiva tres">
-          </div>
+        <div class="col-lg-6">
+          <img src="https://picsum.photos/id/1040/900/600" class="img-fluid rounded shadow" alt="Imagen 2">
+        </div>
+      </div>
+
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus risus,
+            iaculis vel, suscipit quis, luctus non, massa.
+          </p>
+          <p>
+            Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
+            Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="https://picsum.photos/id/1050/900/600" class="img-fluid rounded shadow" alt="Imagen 3">
         </div>
       </div>
     </section>
   </main>
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
+  <!-- MODAL DE CONTACTO: SOLO ESTÁ EN INDEX -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable contact-modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title h5" id="contactModalLabel">Contacto</h2>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <div class="modal-header bg-primary text-white">
+          <h2 class="modal-title h5">Contacto</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
         </div>
 
         <form id="contactForm" novalidate>
-          <div class="modal-body">
+          <div class="modal-body contact-modal-body">
             <div class="alert alert-info">
-              Por seguridad, este formulario no solicita datos bancarios, códigos de tarjeta ni información sensible innecesaria.
+              En caso de amenaza sus datos serán usados con responsabilidad y proporcionalidad.
             </div>
 
             <div class="row g-3">
@@ -127,7 +127,7 @@
                   <option value="informar">Informar</option>
                   <option value="colaborar">Colaborar</option>
                   <option value="entrevistar">Entrevistar</option>
-                  <option value="amenar">Amenar</option>
+                  <option value="amenar">Amenazar</option>
                   <option value="criticar">Criticar</option>
                   <option value="otra">Otra cosa</option>
                 </select>
@@ -136,19 +136,19 @@
 
               <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
+                <input id="email" type="email" class="form-control" required>
                 <div class="invalid-feedback">Introduce un email válido.</div>
               </div>
 
               <div class="col-md-6">
-                <label for="nombreGeneral" class="form-label">Nombre</label>
-                <input type="text" id="nombreGeneral" class="form-control" required>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input id="nombre" type="text" class="form-control" required>
                 <div class="invalid-feedback">Introduce tu nombre.</div>
               </div>
 
               <div class="col-md-6">
                 <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" id="asunto" class="form-control" required>
+                <input id="asunto" type="text" class="form-control" required>
                 <div class="invalid-feedback">Introduce un asunto.</div>
               </div>
 
@@ -159,83 +159,71 @@
               </div>
             </div>
 
-            <div id="amenarFields" class="mt-4 d-none">
-              <hr>
-              <h3 class="h5 fw-bold">Datos adicionales para “Amenar”</h3>
-              <p class="small text-muted">
-                Se muestran campos extra no bancarios. Puedes adaptar o eliminar estos campos según la finalidad real del formulario.
-              </p>
+            <div id="amenarFields" class="d-none mt-4">
+             
+              
 
               <div class="row g-3">
                 <div class="col-md-6">
                   <label for="dni" class="form-label">DNI</label>
-                  <input type="text" id="dni" class="form-control amenar-required" pattern="^[0-9]{8}[A-Za-z]$" placeholder="12345678A">
-                  <div class="invalid-feedback">Introduce un DNI con formato 12345678A.</div>
+                  <input id="dni" type="text" class="form-control amenar-required" placeholder="12345678A">
                 </div>
 
                 <div class="col-md-6">
                   <label for="domicilio" class="form-label">Domicilio</label>
-                  <input type="text" id="domicilio" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce un domicilio.</div>
+                  <input id="domicilio" type="text" class="form-control amenar-required">
                 </div>
 
                 <div class="col-md-6">
                   <label for="apellidos" class="form-label">Apellidos</label>
-                  <input type="text" id="apellidos" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce tus apellidos.</div>
+                  <input id="apellidos" type="text" class="form-control amenar-required">
                 </div>
 
                 <div class="col-md-6">
                   <label for="codigoPostal" class="form-label">Código postal</label>
-                  <input type="text" id="codigoPostal" class="form-control amenar-required" pattern="^[0-9]{5}$" placeholder="28001">
-                  <div class="invalid-feedback">Introduce un código postal de 5 cifras.</div>
+                  <input id="codigoPostal" type="text" class="form-control amenar-required">
                 </div>
 
                 <div class="col-md-4">
                   <label for="sexo" class="form-label">Sexo</label>
                   <select id="sexo" class="form-select amenar-required">
-                    <option value="" selected disabled>Selecciona</option>
+                    <option value="">Selecciona</option>
                     <option>Mujer</option>
                     <option>Hombre</option>
                     <option>No binario</option>
                     <option>Prefiero no decirlo</option>
                   </select>
-                  <div class="invalid-feedback">Selecciona una opción.</div>
                 </div>
 
                 <div class="col-md-4">
                   <label for="edad" class="form-label">Edad</label>
-                  <input type="number" id="edad" class="form-control amenar-required" min="14" max="120">
-                  <div class="invalid-feedback">Introduce una edad válida.</div>
+                  <input id="edad" type="number" class="form-control amenar-required">
                 </div>
 
                 <div class="col-md-4">
                   <label for="formaFisica" class="form-label">Forma física</label>
                   <select id="formaFisica" class="form-select amenar-required">
-                    <option value="" selected disabled>Selecciona</option>
+                    <option value="">Selecciona</option>
                     <option>Baja</option>
                     <option>Media</option>
                     <option>Alta</option>
                   </select>
-                  <div class="invalid-feedback">Selecciona una opción.</div>
                 </div>
 
                 <div class="col-md-4">
                   <label for="horoscopo" class="form-label">Horóscopo</label>
-                  <input type="text" id="horoscopo" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce tu horóscopo.</div>
+                  <input id="horoscopo" type="text" class="form-control amenar-required">
                 </div>
 
                 <div class="col-md-4">
                   <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                  <input type="date" id="fechaNacimiento" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce una fecha.</div>
+                  <input id="fechaNacimiento" type="date" class="form-control amenar-required">
                 </div>
 
                 <div class="col-md-4">
                   <label for="grupoSanguineo" class="form-label">Grupo sanguíneo</label>
                   <select id="grupoSanguineo" class="form-select amenar-required">
-                    <option value="" selected disabled>Selecciona</option>
+                    <option value="">Selecciona</option>
                     <option>A+</option>
                     <option>A-</option>
                     <option>B+</option>
@@ -245,31 +233,25 @@
                     <option>O+</option>
                     <option>O-</option>
                   </select>
-                  <div class="invalid-feedback">Selecciona un grupo sanguíneo.</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn btn-brand">Enviar</button>
+          <div class="modal-footer contact-modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
         </form>
       </div>
     </div>
-  </div><footer>
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <p class="mb-0">© 2026 Mi Web. Todos los derechos reservados.</p>
-      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal">
-        Abrir contacto
-      </button>
-    </div>
-  </footer>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
 
-  <!-- JS propio -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2026 Mi Web</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

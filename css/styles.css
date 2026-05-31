@@ -116,6 +116,29 @@ h2 {
   overflow: hidden;
 }
 
+/* Corrección para que el formulario tenga scroll */
+.contact-modal-dialog {
+  max-height: calc(100vh - 2rem);
+}
+
+.contact-modal-dialog .modal-content {
+  max-height: calc(100vh - 2rem);
+}
+
+.contact-modal-body {
+  max-height: 65vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.contact-modal-footer {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  z-index: 5;
+  border-top: 1px solid #dee2e6;
+}
+
 footer {
   margin-top: 0;
 }
@@ -129,5 +152,9 @@ footer {
     width: 82px;
     height: 82px;
     min-width: 82px;
+  }
+
+  .contact-modal-body {
+    max-height: 60vh;
   }
 }

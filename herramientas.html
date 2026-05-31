@@ -1,174 +1,142 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Herramientas | Mi Web</title>
+  <title>Herramientas</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- CSS propio -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">MI WEB</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MI WEB</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">¿Qué es?</a></li>
-          <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
-          <li class="nav-item"><a class="nav-link" href="herramientas.html">Herramientas</a></li>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item">
-            <button class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#contactModal">
-              Contacto
-            </button>
+            <a class="nav-link" href="index.html">¿Qué es?</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html">Videos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="herramientas.html">Herramientas</a>
+          </li>
+
+          <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
+            <a class="btn btn-primary" href="index.html#contacto">
+              Contacta
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <header class="page-header">
     <div class="container">
-      <p class="section-kicker text-white-50">Recursos</p>
-      <h1 class="display-4 fw-bold">Herramientas</h1>
-      <p class="lead mb-0">Secciones Mili, Guias, orgf y orgsc con vídeos e imágenes.</p>
+      <h1>Herramientas</h1>
+      <p>Secciones Mili, Guias, orgf y orgsc.</p>
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="py-5">
       <div class="container">
-        <h2 class="section-title">Mili</h2>
+        <h2 class="mb-4">Mili</h2>
 
         <div class="row g-4">
           <div class="col-md-4">
             <div class="video-frame horizontal">
-              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Mili video 1" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Mili 1" allowfullscreen></iframe>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="video-frame horizontal">
-              <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" title="Mili video 2" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" title="Mili 2" allowfullscreen></iframe>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="video-frame horizontal">
-              <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Mili video 3" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Mili 3" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="soft-bg">
+    <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="section-title">Guias</h2>
+        <h2 class="mb-4">Guias</h2>
 
         <div class="row g-4">
           <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/10/200" alt="Guía 1">
+              <img src="https://picsum.photos/id/10/200" class="square-thumb" alt="Guía 1">
               <div>
-                <h4 class="h6 fw-bold">Guía 1</h4>
-                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 class="h6">Guía 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </article>
           </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/20/200" alt="Guía 2">
-              <div>
-                <h4 class="h6 fw-bold">Guía 2</h4>
-                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/30/200" alt="Guía 3">
-              <div>
-                <h4 class="h6 fw-bold">Guía 3</h4>
-                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/40/200" alt="Guía 4">
-              <div>
-                <h4 class="h6 fw-bold">Guía 4</h4>
-                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/50/200" alt="Guía 5">
-              <div>
-                <h4 class="h6 fw-bold">Guía 5</h4>
-                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/60/200" alt="Guía 6">
-              <div>
-                <h4 class="h6 fw-bold">Guía 6</h4>
-                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <h2 class="section-title">orgf</h2>
+          <div class="col-md-6 col-xl-4">
+            <article class="mini-item d-flex gap-3">
+              <img src="https://picsum.photos/id/20/200" class="square-thumb" alt="Guía 2">
+              <div>
+                <h3 class="h6">Guía 2</h3>
+                <p>Praesent libero, sed cursus ante dapibus diam.</p>
+              </div>
+            </article>
+          </div>
 
-        <div class="row g-4">
-          <div class="col-md-6">
+          <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/70/200" alt="orgf 1">
+              <img src="https://picsum.photos/id/30/200" class="square-thumb" alt="Guía 3">
               <div>
-                <h4 class="h6 fw-bold">orgf 1</h4>
-                <p class="small mb-0">Maecenas mattis sed convallis tristique sem.</p>
+                <h3 class="h6">Guía 3</h3>
+                <p>Nulla quis sem at nibh elementum imperdiet.</p>
               </div>
             </article>
           </div>
-          <div class="col-md-6">
+
+          <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/80/200" alt="orgf 2">
+              <img src="https://picsum.photos/id/40/200" class="square-thumb" alt="Guía 4">
               <div>
-                <h4 class="h6 fw-bold">orgf 2</h4>
-                <p class="small mb-0">Maecenas mattis sed convallis tristique sem.</p>
+                <h3 class="h6">Guía 4</h3>
+                <p>Duis sagittis ipsum. Praesent mauris.</p>
               </div>
             </article>
           </div>
-          <div class="col-md-6">
+
+          <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/90/200" alt="orgf 3">
+              <img src="https://picsum.photos/id/50/200" class="square-thumb" alt="Guía 5">
               <div>
-                <h4 class="h6 fw-bold">orgf 3</h4>
-                <p class="small mb-0">Maecenas mattis sed convallis tristique sem.</p>
+                <h3 class="h6">Guía 5</h3>
+                <p>Vestibulum lacinia arcu eget nulla.</p>
               </div>
             </article>
           </div>
-          <div class="col-md-6">
+
+          <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/100/200" alt="orgf 4">
+              <img src="https://picsum.photos/id/60/200" class="square-thumb" alt="Guía 6">
               <div>
-                <h4 class="h6 fw-bold">orgf 4</h4>
-                <p class="small mb-0">Maecenas mattis sed convallis tristique sem.</p>
+                <h3 class="h6">Guía 6</h3>
+                <p>Curabitur sodales ligula in libero.</p>
               </div>
             </article>
           </div>
@@ -176,62 +144,115 @@
       </div>
     </section>
 
-    <section class="soft-bg">
+    <section class="py-5">
       <div class="container">
-        <h2 class="section-title">orgsc</h2>
+        <h2 class="mb-4">orgf</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="mini-item d-flex gap-3">
+              <img src="https://picsum.photos/id/70/200" class="square-thumb" alt="orgf 1">
+              <div>
+                <h3 class="h6">orgf 1</h3>
+                <p>Maecenas mattis sed convallis tristique.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="mini-item d-flex gap-3">
+              <img src="https://picsum.photos/id/80/200" class="square-thumb" alt="orgf 2">
+              <div>
+                <h3 class="h6">orgf 2</h3>
+                <p>Proin ut ligula vel nunc egestas porttitor.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="mini-item d-flex gap-3">
+              <img src="https://picsum.photos/id/90/200" class="square-thumb" alt="orgf 3">
+              <div>
+                <h3 class="h6">orgf 3</h3>
+                <p>Morbi lectus risus, iaculis vel suscipit.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="mini-item d-flex gap-3">
+              <img src="https://picsum.photos/id/100/200" class="square-thumb" alt="orgf 4">
+              <div>
+                <h3 class="h6">orgf 4</h3>
+                <p>Fusce ac turpis quis ligula lacinia aliquet.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">orgsc</h2>
 
         <div class="row g-4">
           <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/110/200" alt="orgsc 1">
+              <img src="https://picsum.photos/id/110/200" class="square-thumb" alt="orgsc 1">
               <div>
-                <h4 class="h6 fw-bold">orgsc 1</h4>
-                <p class="small mb-0">Curabitur tortor pellentesque nibh aenean quam.</p>
+                <h3 class="h6">orgsc 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </article>
           </div>
+
           <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/120/200" alt="orgsc 2">
+              <img src="https://picsum.photos/id/120/200" class="square-thumb" alt="orgsc 2">
               <div>
-                <h4 class="h6 fw-bold">orgsc 2</h4>
-                <p class="small mb-0">Curabitur tortor pellentesque nibh aenean quam.</p>
+                <h3 class="h6">orgsc 2</h3>
+                <p>Integer nec odio praesent libero sed cursus.</p>
               </div>
             </article>
           </div>
+
           <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/130/200" alt="orgsc 3">
+              <img src="https://picsum.photos/id/130/200" class="square-thumb" alt="orgsc 3">
               <div>
-                <h4 class="h6 fw-bold">orgsc 3</h4>
-                <p class="small mb-0">Curabitur tortor pellentesque nibh aenean quam.</p>
+                <h3 class="h6">orgsc 3</h3>
+                <p>Aenean quam in scelerisque sem at dolor.</p>
               </div>
             </article>
           </div>
+
           <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/140/200" alt="orgsc 4">
+              <img src="https://picsum.photos/id/140/200" class="square-thumb" alt="orgsc 4">
               <div>
-                <h4 class="h6 fw-bold">orgsc 4</h4>
-                <p class="small mb-0">Curabitur tortor pellentesque nibh aenean quam.</p>
+                <h3 class="h6">orgsc 4</h3>
+                <p>Curabitur tortor pellentesque nibh aenean.</p>
               </div>
             </article>
           </div>
+
           <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/150/200" alt="orgsc 5">
+              <img src="https://picsum.photos/id/150/200" class="square-thumb" alt="orgsc 5">
               <div>
-                <h4 class="h6 fw-bold">orgsc 5</h4>
-                <p class="small mb-0">Curabitur tortor pellentesque nibh aenean quam.</p>
+                <h3 class="h6">orgsc 5</h3>
+                <p>Sed dignissim lacinia nunc curabitur tortor.</p>
               </div>
             </article>
           </div>
+
           <div class="col-md-6 col-xl-4">
             <article class="mini-item d-flex gap-3">
-              <img class="square-thumb" src="https://picsum.photos/id/160/200" alt="orgsc 6">
+              <img src="https://picsum.photos/id/160/200" class="square-thumb" alt="orgsc 6">
               <div>
-                <h4 class="h6 fw-bold">orgsc 6</h4>
-                <p class="small mb-0">Curabitur tortor pellentesque nibh aenean quam.</p>
+                <h3 class="h6">orgsc 6</h3>
+                <p>Quisque volutpat condimentum velit.</p>
               </div>
             </article>
           </div>
@@ -239,171 +260,12 @@
       </div>
     </section>
   </main>
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title h5" id="contactModalLabel">Contacto</h2>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
 
-        <form id="contactForm" novalidate>
-          <div class="modal-body">
-            <div class="alert alert-info">
-              Por seguridad, este formulario no solicita datos bancarios, códigos de tarjeta ni información sensible innecesaria.
-            </div>
-
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="motivo" class="form-label">Motivo del contacto</label>
-                <select id="motivo" class="form-select" required>
-                  <option value="" selected disabled>Selecciona una opción</option>
-                  <option value="informar">Informar</option>
-                  <option value="colaborar">Colaborar</option>
-                  <option value="entrevistar">Entrevistar</option>
-                  <option value="amenar">Amenar</option>
-                  <option value="criticar">Criticar</option>
-                  <option value="otra">Otra cosa</option>
-                </select>
-                <div class="invalid-feedback">Selecciona un motivo.</div>
-              </div>
-
-              <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
-                <div class="invalid-feedback">Introduce un email válido.</div>
-              </div>
-
-              <div class="col-md-6">
-                <label for="nombreGeneral" class="form-label">Nombre</label>
-                <input type="text" id="nombreGeneral" class="form-control" required>
-                <div class="invalid-feedback">Introduce tu nombre.</div>
-              </div>
-
-              <div class="col-md-6">
-                <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" id="asunto" class="form-control" required>
-                <div class="invalid-feedback">Introduce un asunto.</div>
-              </div>
-
-              <div class="col-12">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea id="mensaje" class="form-control" rows="5" required></textarea>
-                <div class="invalid-feedback">Escribe un mensaje.</div>
-              </div>
-            </div>
-
-            <div id="amenarFields" class="mt-4 d-none">
-              <hr>
-              <h3 class="h5 fw-bold">Datos adicionales para “Amenar”</h3>
-              <p class="small text-muted">
-                Se muestran campos extra no bancarios. Puedes adaptar o eliminar estos campos según la finalidad real del formulario.
-              </p>
-
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="dni" class="form-label">DNI</label>
-                  <input type="text" id="dni" class="form-control amenar-required" pattern="^[0-9]{8}[A-Za-z]$" placeholder="12345678A">
-                  <div class="invalid-feedback">Introduce un DNI con formato 12345678A.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="domicilio" class="form-label">Domicilio</label>
-                  <input type="text" id="domicilio" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce un domicilio.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="apellidos" class="form-label">Apellidos</label>
-                  <input type="text" id="apellidos" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce tus apellidos.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="codigoPostal" class="form-label">Código postal</label>
-                  <input type="text" id="codigoPostal" class="form-control amenar-required" pattern="^[0-9]{5}$" placeholder="28001">
-                  <div class="invalid-feedback">Introduce un código postal de 5 cifras.</div>
-                </div>
-
-                <div class="col-md-4">
-                  <label for="sexo" class="form-label">Sexo</label>
-                  <select id="sexo" class="form-select amenar-required">
-                    <option value="" selected disabled>Selecciona</option>
-                    <option>Mujer</option>
-                    <option>Hombre</option>
-                    <option>No binario</option>
-                    <option>Prefiero no decirlo</option>
-                  </select>
-                  <div class="invalid-feedback">Selecciona una opción.</div>
-                </div>
-
-                <div class="col-md-4">
-                  <label for="edad" class="form-label">Edad</label>
-                  <input type="number" id="edad" class="form-control amenar-required" min="14" max="120">
-                  <div class="invalid-feedback">Introduce una edad válida.</div>
-                </div>
-
-                <div class="col-md-4">
-                  <label for="formaFisica" class="form-label">Forma física</label>
-                  <select id="formaFisica" class="form-select amenar-required">
-                    <option value="" selected disabled>Selecciona</option>
-                    <option>Baja</option>
-                    <option>Media</option>
-                    <option>Alta</option>
-                  </select>
-                  <div class="invalid-feedback">Selecciona una opción.</div>
-                </div>
-
-                <div class="col-md-4">
-                  <label for="horoscopo" class="form-label">Horóscopo</label>
-                  <input type="text" id="horoscopo" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce tu horóscopo.</div>
-                </div>
-
-                <div class="col-md-4">
-                  <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                  <input type="date" id="fechaNacimiento" class="form-control amenar-required">
-                  <div class="invalid-feedback">Introduce una fecha.</div>
-                </div>
-
-                <div class="col-md-4">
-                  <label for="grupoSanguineo" class="form-label">Grupo sanguíneo</label>
-                  <select id="grupoSanguineo" class="form-select amenar-required">
-                    <option value="" selected disabled>Selecciona</option>
-                    <option>A+</option>
-                    <option>A-</option>
-                    <option>B+</option>
-                    <option>B-</option>
-                    <option>AB+</option>
-                    <option>AB-</option>
-                    <option>O+</option>
-                    <option>O-</option>
-                  </select>
-                  <div class="invalid-feedback">Selecciona un grupo sanguíneo.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn btn-brand">Enviar</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div><footer>
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <p class="mb-0">© 2026 Mi Web. Todos los derechos reservados.</p>
-      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal">
-        Abrir contacto
-      </button>
-    </div>
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2026 Mi Web</p>
   </footer>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- JS propio -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
