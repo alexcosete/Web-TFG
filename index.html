@@ -104,7 +104,7 @@
     </section>
   </main>
 
-  <!-- MODAL DE CONTACTO: SOLO ESTÁ EN INDEX -->
+  <!-- CONTACTO: SOLO ESTÁ EN INDEX -->
   <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable contact-modal-dialog">
       <div class="modal-content">
@@ -158,6 +158,29 @@
                 <div class="invalid-feedback">Escribe un mensaje.</div>
               </div>
             </div>
+<!-- Campos para Entrevistar -->
+            <div id="entrevistarFields" class="d-none mt-4">
+              <hr>
+                <h3 class="h5">Datos para la entrevista</h3>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="tipoEntrevista" class="form-label">Tipo de medio</label>
+                      <select id="tipoEntrevista" class="form-select entrevistar-required">
+                        <option value="">Selecciona una opción</option>
+                        <option value="medio">Medio</option>
+                        <option value="youtube">Canal de YouTube</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="nombreMedioCanal" class="form-label">Nombre del medio o canal</label>
+                    <input id="nombreMedioCanal" type="text" class="form-control entrevistar-required">
+                 </div>
+                 </div>
+          </div>
+
+<!-- Campos para Amenazar -->
 
             <div id="amenarFields" class="d-none mt-4">
              

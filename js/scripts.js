@@ -1,7 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const motivo = document.getElementById("motivo");
+
   const amenarFields = document.getElementById("amenarFields");
   const amenarRequiredFields = document.querySelectorAll(".amenar-required");
+
+  const entrevistarFields = document.getElementById("entrevistarFields");
+  const entrevistarRequiredFields = document.querySelectorAll(".entrevistar-required");
+
   const contactForm = document.getElementById("contactForm");
   const contactModalElement = document.getElementById("contactModal");
   const contactLinks = document.querySelectorAll(".contact-link");
@@ -13,25 +18,50 @@ document.addEventListener("DOMContentLoaded", () => {
     contactModal.show();
   }
 
-  function toggleAmenarFields() {
-    if (!motivo || !amenarFields) return;
+  function toggleExtraFields() {
+    if (!motivo) return;
 
     const isAmenar = motivo.value === "amenar";
+    const isEntrevistar = motivo.value === "entrevistar";
 
-    amenarFields.classList.toggle("d-none", !isAmenar);
+    if (amenarFields) {
+      amenarFields.classList.toggle("d-none", !isAmenar);
 
-    amenarRequiredFields.forEach((field) => {
-      if (isAmenar) {
-        field.setAttribute("required", "required");
-      } else {
-        field.removeAttribute("required");
-        field.value = "";
-      }
-    });
+      amenarRequiredFields.forEach((field) => {
+        if (isAmenar) {
+          field.setAttribute("required", "required");
+        } else {
+          field.removeAttribute("required");
+          field.value = "";
+        }
+      });
+    }
 
-    if (isAmenar) {
+    if (entrevistarFields) {
+      entrevistarFields.classList.toggle("d-none", !isEntrevistar);
+
+      entrevistarRequiredFields.forEach((field) => {
+        if (isEntrevistar) {
+          field.setAttribute("required", "required");
+        } else {
+          field.removeAttribute("required");
+          field.value = "";
+        }
+      });
+    }
+
+    if (isAmenar && amenarFields) {
       setTimeout(() => {
         amenarFields.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 200);
+    }
+
+    if (isEntrevistar && entrevistarFields) {
+      setTimeout(() => {
+        entrevistarFields.scrollIntoView({
           behavior: "smooth",
           block: "start"
         });
@@ -40,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (motivo) {
-    motivo.addEventListener("change", toggleAmenarFields);
+    motivo.addEventListener("change", toggleExtraFields);
   }
 
   contactLinks.forEach((link) => {
@@ -79,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       contactForm.reset();
       contactForm.classList.remove("was-validated");
-      toggleAmenarFields();
+      toggleExtraFields();
 
       const modalInstance = bootstrap.Modal.getInstance(contactModalElement);
 
